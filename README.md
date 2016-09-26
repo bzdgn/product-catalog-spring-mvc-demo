@@ -24,7 +24,7 @@
 
 ![alt text](http://leventdivilioglu.com/prod-cata-ss/06-list-by-category.png "Category Listing Screenshot")
 
-# 02 Project Setup
+# 02 Project Startup
 
 	Following maven archetype is used to create web application
 
@@ -36,7 +36,7 @@
 		
 	mvn archetype:generate -DgroupId=com.levent.pcd -DartifactId=ProductCatalogDemo -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false`
 
-## 03 Project Setup
+# 03 Project Setup
 
 - MongoDB is needed for this project
 - On windows, simply run the command below (notify that you have to specify a dbpath parameter)
@@ -47,7 +47,7 @@ I'm using the command below on my windows machine;
 
 `C:\Program Files\MongoDB\Server\3.0\bin>mongod --port 27017 --dbpath D:\MONGOTEST\data`
 
-## 04 Project Data
+# 04 Project Data
 
 - Database name is specified on `servlet-config.xml` (WEB-INF/config/servlet-config.xml), 
 and set to `levent`. You can change or set an arbitrary name for it.
@@ -158,3 +158,15 @@ Also notify that database data is located on `src/resources/database-data` folde
 		}
 	]
 })`
+
+# 05 Explanation
+
+There are several packages due to N-tier application model. Front Controllers are located on `controller` package. Controller classes invokes classes under Service and Business packages. Business package is an additional abstraction for service. Service layer uses Repository package classes and that's all.
+
+There is only one model class, `Product`. However for session scoped shopping cart data, there is also `ShoppingCartMap` class, and also there is an `ShoppingCartEntry` class which I use to store the orders per Product Code, it's actually a map.
+
+There is a very simple Strategy Pattern implementation on `ShoppingHandlerImpl` class. `ShoppingHandlerImpl` has a price handler instance which is actually a PriceStrategy interface. This is a very primitive demonstration of Strategy Design Pattern.
+
+There are some several Rest Endpoints under `RestServicesController` class. One of them with request mapping `services/addToCart` is used for the update of session scoped variable on product details add-to-cart functionality, see `product-details.jsp` view under `WEB-INF/jsp`
+
+I used twitter bootstrap on for page layout for a better view and responsive design.

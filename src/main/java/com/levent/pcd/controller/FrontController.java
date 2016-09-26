@@ -104,22 +104,4 @@ public class FrontController {
 		return model;
 	}
 	
-	/*
-	 * additional search mappings
-	 */
-//	@RequestMapping(value = "/shopping-cart", params="srch-term")
-//	public ModelAndView searchRedirectShoppingCart(@RequestParam("srch-term") String searchTerm) {
-//		return new ModelAndView("redirect:/main/products/?srch-term=" + searchTerm);
-//	}
-//	
-//	@RequestMapping(value = "/product-details-{productCode}", params="srch-term")
-//	public ModelAndView searchRedirectProductDetails (@RequestParam("srch-term") String searchTerm) {
-//		return new ModelAndView("redirect:/main/products/?srch-term=" + searchTerm);
-//	}
-//	
-//	@RequestMapping(value = "/products-by-category-{categoryName}", params="srch-term")
-//	public String searchRedirectProductCategory (@RequestParam("srch-term") String searchTerm) {
-//		return "redirect:/main/products/?srch-term=" + searchTerm;
-//	}
-	
 }
