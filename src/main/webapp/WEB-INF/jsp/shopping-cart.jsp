@@ -16,7 +16,7 @@
     
 
 	
-    <title>Product List Page</title>
+    <title>Shopping Cart Page</title>
     
     <spring:url value="/main/products" var="productListPageURL" />
 	<spring:url value="/main/shopping-cart" var="shoppingCartPageURL" />
@@ -65,7 +65,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Cool Shoes</a>
+                <a class="navbar-brand" href="${productListPageURL}">Cool Shoes</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
