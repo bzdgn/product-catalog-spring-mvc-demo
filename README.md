@@ -170,3 +170,8 @@ There is a very simple Strategy Pattern implementation on `ShoppingHandlerImpl` 
 There are some several Rest Endpoints under `RestServicesController` class. One of them with request mapping `services/addToCart` is used for the update of session scoped variable on product details add-to-cart functionality, see `product-details.jsp` view under `WEB-INF/jsp`
 
 I used twitter bootstrap on for page layout for a better view and responsive design.
+
+# 06 Further Notes
+
+Because that I need trivial image data to run the project, I've fetched some images from google and none of them
+belongs to me.
