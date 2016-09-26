@@ -2,8 +2,27 @@
 
 ## H2 01-A) Product List Page
 
-![alt text](http://leventdivilioglu.com/prod-cata-ss/01_products-list-page.png "IMG #1")
+![alt text](http://leventdivilioglu.com/prod-cata-ss/01_products-list-page.png "Product List Page")
 
+## H2 01-B) Product Details Page
+
+![alt text](http://leventdivilioglu.com/prod-cata-ss/02_product-detail-page.png "Product Detail Page")
+
+## H2 01-C) Product Details Page Confirmation Modal
+
+![alt text](http://leventdivilioglu.com/prod-cata-ss/03_product-detail-page-confirmation.png "Product Detail Page Confirmation")
+
+## H2 01-D) Shopping Cart Page
+
+![alt text](http://leventdivilioglu.com/prod-cata-ss/04_shopping-cart-page.png "Shopping Cart Page")
+
+## H2 01-E) Search Functionality
+
+![alt text](http://leventdivilioglu.com/prod-cata-ss/05_search-functionality.png "Search Screenshot")
+
+## H2 01-F) List Products By Selected Category
+
+![alt text](http://leventdivilioglu.com/prod-cata-ss/06-list-by-category.png "Category Listing Screenshot")
 
 
 00 Project Startup
